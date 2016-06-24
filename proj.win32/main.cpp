@@ -1,4 +1,4 @@
-#include "main.h"
+﻿#include "main.h"
 #include "AppDelegate.h"
 #include "CCEGLView.h"
 
@@ -16,6 +16,9 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     AppDelegate app;
     CCEGLView* eglView = CCEGLView::sharedOpenGLView();
     eglView->setViewName("HelloMyMT");
-    eglView->setFrameSize(480, 320);
+	// 配置分辨率：实际分辨率
+    eglView->setFrameSize(640, 960);
+	// 对窗口进行缩放
+	eglView->setFrameZoomFactor(0.6f);
     return CCApplication::sharedApplication()->run();
 }

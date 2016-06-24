@@ -1,4 +1,4 @@
-#include "AppDelegate.h"
+﻿#include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
 USING_NS_CC;
@@ -20,6 +20,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	
     // turn on display FPS
     pDirector->setDisplayStats(true);
+	// 分辨率适配：设计分辨率
+	//（用于游戏开发，当游戏发布的时候需要把设计分辨率与实际分辨率匹配在一起）
+	pEGLView->setDesignResolutionSize(640, 960, kResolutionExactFit);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
