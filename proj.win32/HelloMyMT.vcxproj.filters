@@ -7,6 +7,9 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\登录">
+      <UniqueIdentifier>{27aa31f2-0d35-4051-9e3d-e8321f2a4f1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -15,6 +18,12 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\CopyrightScene.cpp">
+      <Filter>Classes\登录</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CopyrightLayer.cpp">
+      <Filter>Classes\登录</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -22,6 +31,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CopyrightScene.h">
+      <Filter>Classes\登录</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CopyrightLayer.h">
+      <Filter>Classes\登录</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
